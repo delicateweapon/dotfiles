@@ -1,0 +1,44 @@
+@theme "/usr/share/rofi/themes/dmenu.rasi"
+
+* {
+    background-color: #09090a;
+    border-color: White;
+    text-color: White;
+    font-family: "Sora";
+}
+window {
+    anchor:     center;
+    location:   center;
+    width:      50%;
+    padding:    4px;
+    children:   [ vertbox ];
+}
+vertbox {
+    orientation: vertical;
+    children:   [ entry, listview ];
+    padding:    2em;
+}
+entry {
+    font-family: "Monaspace Neon";
+    text-color: #00ffff;
+}
+listview {
+    layout:     vertical;
+    spacing:    5px;
+    lines:      10;
+}
+entry {
+    expand:     false;
+    width:      10em;
+}
+element {
+    padding: 0px 2px;
+}
+element selected {
+    background-color: #fe338e;
+}
+
+element-text, element-icon {
+  background-color: inherit;
+  text-color: inherit;
+}
